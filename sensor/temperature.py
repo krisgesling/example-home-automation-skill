@@ -9,7 +9,7 @@ class TemperatureSensor():
         self.measurement_unit = "C" if units == "metric" else "F"
 
     @property
-    def _temperature(self):
+    def _temperature(self) -> int:
         """Generate a random temperature.
         
         For the purposes of being a test Skill.
